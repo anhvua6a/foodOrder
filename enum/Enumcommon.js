@@ -21,3 +21,7 @@ module.exports.BillStatus = {
     CANCEL: 0,
     DOING : 1
 }
+module.exports.TableStatus = {
+    NORMAL: 1,
+    USED: 2
+}

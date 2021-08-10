@@ -1,8 +1,8 @@
-var mogoose = require('mongoose')
-let  EnumCommon = require("../enum/Enumcommon.js");
+let mongoose = require('mongoose')
+let EnumCommon = require("../enum/Enumcommon.js");
 
 
-var billSchema = new mogoose.Schema({
+let billSchema = new mongoose.Schema({
   userID:String,
   address:String,
   description: String,
@@ -10,4 +10,4 @@ var billSchema = new mogoose.Schema({
   status: {type: Number, default: EnumCommon.BillStatus.DOING}
 })
 
-module.exports=mogoose.model('bill',billSchema)
+module.exports=mongoose.model('bill',billSchema)

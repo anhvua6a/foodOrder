@@ -8,5 +8,3 @@ let db = mongoose.connect(url, {
 }).then(() => console.log('co lếch thành công')).catch(function (error) {
     console.log(error)
 })
-
-module.exports = db

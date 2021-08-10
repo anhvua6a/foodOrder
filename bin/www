@@ -1,37 +1,13 @@
-#!/usr/bin/env node
-
-/**
- * Module dependencies.
- */
-
 let app = require('../app');
 let debug = require('debug')('foodorder:server');
 let http = require('http');
-
-/**
- * Get port from environment and store in Express.
- */
-
 let port = normalizePort(process.env.PORT || '9999');
 app.set('port', port);
-
-/**
- * Create HTTP server.
- */
-
 let server = http.createServer(app);
 
-/**
- * Listen on provided port, on all network interfaces.
- */
-
-server.listen(port);
+server.listen(port, () => console.log(`Server is running at http://localhost:${port}`));
 server.on('error', onError);
 server.on('listening', onListening);
-
-/**
- * Normalize a port into a number, string, or false.
- */
 
 function normalizePort(val) {
   let port = parseInt(val, 10);

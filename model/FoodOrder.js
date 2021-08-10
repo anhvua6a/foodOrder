@@ -1,7 +1,7 @@
-var mogoose = require('mongoose')
-var foodOrderSchema = new mogoose.Schema({
+var mongoose = require('mongoose')
+var foodOrderSchema = new mongoose.Schema({
  billID: String,
  foodID: String
 })
 
-module.exports=mogoose.model('foodorder',foodOrderSchema)
+module.exports=mongoose.model('foodorder',foodOrderSchema)

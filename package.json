@@ -3,16 +3,21 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./socket/scoket"
   },
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
+    "express-fileupload": "^1.2.1",
+    "fa-icons": "^0.2.0",
     "hbs": "~4.0.4",
     "http-errors": "~1.6.3",
     "mongoose": "^5.13.2",
     "morgan": "~1.9.1",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "socket.io": "^4.1.3",
+    "uniqid": "^5.3.0"
   }
 }

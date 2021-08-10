@@ -1,11 +1,12 @@
-var mogoose = require('mongoose')
-let EnumCommon = require('/enum/Enumcommon')
+var mongoose = require('mongoose')
+let EnumCommon = require('../enum/Enumcommon')
 
-var tableSchema = new mogoose.Schema({
+var tableSchema = new mongoose.Schema({
    userID: String,
-   date: date,
-   personnumber: Number,
+   tableName: String,
+   date: Date,
+   personNumber: Number,
    status: {type: Number, default: EnumCommon.TableOrderStatus.COMING}
 })
 
-module.exports=mogoose.model('tableorder',tableSchema)
+module.exports=mongoose.model('tableorder',tableSchema)
